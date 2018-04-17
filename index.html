@@ -1,7 +1,7 @@
 <head>
   <title>My A-Frame Scene</title>
   <script src="https://aframe.io/releases/0.7.0/aframe.min.js"></script>
-  <script src="https://cdn.rawgit.com/jeromeetienne/AR.js/1.5.0/aframe/build/aframe-ar.js"></script>
+  <script src="https://cdn.rawgit.com/jeromeetienne/AR.js/1.5.5/aframe/build/aframe-ar.js"></script>
 </head>
  
 <body style="margin : 0px; overflow: hidden;">
@@ -40,8 +40,8 @@
     <a-light type="ambient" color="#ffe0f9"></a-light>
     <a-light type="point" intensity="0.3" position="2 9 4"></a-light>
 
-    <a-marker-camera type="pattern" patternUrl="https://cdn.glitch.com/9c380f7d-bdf3-41b0-b2be-88eed104215d%2Fmarker.patt"></a-marker-camera>      
+    <a-marker-camera preset="custom" type="pattern" url="https://raw.githubusercontent.com/alexxss/custom-marker/master/marker.patt"></a-marker-camera>      
 
-    <a-entity camera></a-entity>    
+<!--     <a-entity camera></a-entity>     -->
   </a-scene>
 </body>
