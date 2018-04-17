@@ -1,0 +1,47 @@
+<head>
+  <title>My A-Frame Scene</title>
+  <script src="https://aframe.io/releases/0.7.0/aframe.min.js"></script>
+  <script src="https://cdn.rawgit.com/jeromeetienne/AR.js/1.5.0/aframe/build/aframe-ar.js"></script>
+</head>
+ 
+<body style="margin : 0px; overflow: hidden;">
+  <a-scene embedded arjs="sourceType: webcam;">
+
+<!-- 綠色丸子 -->
+    <a-sphere color="green" position="0 2.3 0.2" rotation="30 45 45" scale="0.2 0.2 0.2">
+      <a-animation attribute="rotation" to="30 60 45" direction="alternate" dur="2000"
+         repeat="indefinite"></a-animation>
+      <a-animation attribute="position" to="0 2.5 0" direction="alternate" dur="2000"
+       repeat="indefinite"></a-animation>
+    </a-sphere>
+<!-- 白色丸子 -->
+    <a-sphere color="white" position="0 2 0.2" rotation="0 0 0" scale="0.2 0.2 0.2">
+      <a-animation attribute="rotation" to="30 60 45" direction="alternate" dur="2000"
+         repeat="indefinite"></a-animation>
+      <a-animation attribute="position" to="0 2.2 0.2" direction="alternate" dur="2000"
+       repeat="indefinite"></a-animation>
+    </a-sphere>
+<!-- 粉色丸子 -->
+    <a-sphere color="#ff89e9" position="0 1.7 0.2" rotation="30 45 45" scale="0.2 0.2 0.2">
+        <a-animation attribute="rotation" to="30 60 45" direction="alternate" dur="2000"
+         repeat="indefinite"></a-animation>
+        <a-animation attribute="position" to="0 1.9 0.4" direction="alternate" dur="2000"
+         repeat="indefinite"></a-animation>
+    </a-sphere>
+<!-- 竹籤 -->      
+    <a-cylinder color="#896d06" position="0 2 0.2" rotation="3 0 0" scale="0.2 0.2 0.2" height="8" radius="0.05">
+      <a-animation attribute="rotation" to="-34 0 0" direction="alternate" dur="2000"
+         repeat="indefinite"></a-animation>
+      <a-animation attribute="position" to="0 2.2 0.2" direction="alternate" dur="2000"
+       repeat="indefinite"></a-animation>
+    </a-cylinder>
+
+<!-- 燈光 -->
+    <a-light type="ambient" color="#ffe0f9"></a-light>
+    <a-light type="point" intensity="0.3" position="2 9 4"></a-light>
+
+    <a-marker-camera type="pattern" patternUrl="https://cdn.glitch.com/9c380f7d-bdf3-41b0-b2be-88eed104215d%2Fmarker.patt"></a-marker-camera>      
+
+    <a-entity camera></a-entity>    
+  </a-scene>
+</body>

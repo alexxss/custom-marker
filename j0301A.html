@@ -1,0 +1,26 @@
+<html>
+  <head>
+    <title>Multiple Markers - A-Frame School</title>
+    <meta name="description" content="Multiple Markers - A-Frame School">
+    <script src="https://aframe.io/releases/0.7.0/aframe.min.js"></script>
+    <script src="https://cdn.rawgit.com/jeromeetienne/AR.js/1.5.0/aframe/build/aframe-ar.js"></script>
+  </head>
+<body style="margin : 0px; overflow: hidden;">
+  <a-scene embedded arjs="sourceType: webcam;">
+    <!-- handle marker with your own pattern -->
+     <a-sphere position="-4 0.5 -10" radius="1.00" rotation="0 10 0" color="#EF2D5E"></a-sphere>
+     <a-cylinder color="red" position="5 2 -18" rotation="30 45 45" scale="1 1 1">  
+          <a-animation attribute="rotation" to="130 160 45" direction="alternate" dur="2000" repeat="indefinite"> </a-animation>
+     </a-cylinder> 
+     <a-text anchor="align" position="2 0.1 -10" rotation="40 50 10" side="double" width="5" color="red" value="Hello world 嘉義大學"></a-text>
+    
+      <a-marker-camera type='pattern' patternUrl='hiro.patt'>
+        <a-torus-knot color="green" shadow="castShadow: true" position="0 2 0" scale="0.2 0.2 0.2" ></a-torus-knot>
+      </a-marker-camera>
+  
+ 
+    <!-- add a simple camera -->
+    <a-entity camera></a-entity>
+  </a-scene>
+</body>
+</html>
