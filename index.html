@@ -14,34 +14,7 @@
       <a-asset-item id="fish" src="https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Models/master/1.0/BarramundiFish/glTF/BarramundiFish.gltf"></a-asset-item>
     </a-assets>
 <!--     <a-entity camera position="0 0 5" rotation="0 45 0" look-controls="reverseMouseDrag:true" ></a-entity>  -->
-<!-- 綠色丸子 -->
-    <a-sphere color="green" position="0 2.3 0.2" rotation="30 45 45" scale="0.2 0.2 0.2">
-      <a-animation attribute="rotation" to="30 60 45" direction="alternate" dur="2000"
-         repeat="indefinite"></a-animation>
-      <a-animation attribute="position" to="0 2.5 0" direction="alternate" dur="2000"
-       repeat="indefinite"></a-animation>
-    </a-sphere>
-<!-- 白色丸子 -->
-    <a-sphere color="white" position="0 2 0.2" rotation="0 0 0" scale="0.2 0.2 0.2">
-      <a-animation attribute="rotation" to="30 60 45" direction="alternate" dur="2000"
-         repeat="indefinite"></a-animation>
-      <a-animation attribute="position" to="0 2.2 0.2" direction="alternate" dur="2000"
-       repeat="indefinite"></a-animation>
-    </a-sphere>
-<!-- 粉色丸子 -->
-    <a-sphere color="#ff89e9" position="0 1.7 0.2" rotation="30 45 45" scale="0.2 0.2 0.2">
-        <a-animation attribute="rotation" to="30 60 45" direction="alternate" dur="2000"
-         repeat="indefinite"></a-animation>
-        <a-animation attribute="position" to="0 1.9 0.4" direction="alternate" dur="2000"
-         repeat="indefinite"></a-animation>
-    </a-sphere>
-<!-- 竹籤 -->      
-    <a-cylinder color="#896d06" position="0 2 0.2" rotation="3 0 0" scale="0.2 0.2 0.2" height="8" radius="0.05">
-      <a-animation attribute="rotation" to="-34 0 0" direction="alternate" dur="2000"
-         repeat="indefinite"></a-animation>
-      <a-animation attribute="position" to="0 2.2 0.2" direction="alternate" dur="2000"
-       repeat="indefinite"></a-animation>
-    </a-cylinder>
+    <a-entity camera></a-entity>
     
   <a-entity gltf-model="#boxes" look-controls="reverseMouseDrag:true" scale="0.5 0.5 0.5" position="0 1 0" animation-mixer></a-entity>
   <a-entity gltf-model="#fish" look-controls="reverseMouseDrag:true" scale="0.1 0.1 0.1" position="3 1 -3"></a-entity>
@@ -55,8 +28,7 @@
 <!--     <a-sky src="https://i.imgur.com/JHZjdp6.jpg"></a-sky>  -->
     <a-box position="0 2 1"></a-box>
 
-<!--     <a-marker-camera preset="custom" type="pattern" url="https://raw.githubusercontent.com/alexxss/custom-marker/master/marker.patt"></a-marker-camera>       -->
-   <a-marker-camera preset='custom' type='pattern' url='https://raw.githubusercontent.com/mattGraphics/randomfiles/master/big-m.patt'></a-marker-camera> 
+    <a-marker-camera preset="custom" type="pattern" url="https://raw.githubusercontent.com/alexxss/custom-marker/master/marker.patt"></a-marker-camera>      
    
   </a-scene>
 </body>
