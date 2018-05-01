@@ -1,3 +1,5 @@
 .glitch-assets
-*.mltf
+*.gltf
+*.png
+*.gif
 003B.html
